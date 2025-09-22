@@ -145,6 +145,7 @@ Goal: explore better approximations that balance **simplicity** (fast filtering)
 * Only conservative and progressive are useful for queries.
 
 ### 2.4 Six selected convex conservative approximations
+![alt](images/image-1.png)
 * MBB (aligned rectangle).
 * RMBB (rotated rectangle).
 * MBC (circle).
