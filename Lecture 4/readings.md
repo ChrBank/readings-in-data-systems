@@ -105,6 +105,15 @@ Compares Calcite with:
 
 ## Query Processing and Optimization
 
+![alt text](images/sql-example.png)
+![alt text](images/Filterintojoinrule.png)
+> The query corresponds to the relational algebra expression presented in Figure 4a. 
+> * **Filter before Join**: The `WHERE` clause only applies to the `sales` table, hence we can move the filter before the join.
+> * **Result (Figure 4b)**: This optimization can significantly reduce query execution time since we do not need to perform the join for rows which do match the predicate. Hence the join operation becomes faster, due to a smaller dataset for sales.
+
+> This optimization illustrates the flexibility of the Calcite approach
+to optimization.
+
 * Optimizer applies planner rules iteratively with cost-based search.
 
 * Fully extensible (operators, rules, cost models, metadata).
